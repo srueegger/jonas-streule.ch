@@ -24,6 +24,7 @@ body {
 
 .screen_height {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   @include for-tablet-landscape-up {
     height: 736px;
   }
