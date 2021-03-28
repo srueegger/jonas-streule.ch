@@ -36,7 +36,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/style-resources'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -59,6 +60,10 @@ export default {
     families: {
       Roboto: [400, 700]
     }
+  },
+
+  styleResources: {
+    scss: ['~/assets/scss/_variables.scss'],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

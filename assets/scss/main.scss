@@ -12,3 +12,15 @@ body {
 .screen_height {
   height: 100vh;
 }
+
+section {
+  position: relative;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+*[role=button] {
+  cursor: pointer;
+}
