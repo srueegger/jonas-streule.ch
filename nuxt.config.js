@@ -23,7 +23,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'normalize.css/normalize.css'
+    'normalize.css/normalize.css',
+    '~/assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,6 +36,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,6 +48,18 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots'
   ],
+
+  googleFonts: {
+    display: 'swap',
+    text: 'Hallo Welt hier ist Jonas Streule',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    downloaD: true,
+    families: {
+      Roboto: [400, 700]
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
