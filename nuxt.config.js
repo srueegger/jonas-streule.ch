@@ -46,6 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots'
   ],
@@ -63,7 +64,10 @@ export default {
   },
 
   styleResources: {
-    scss: ['~/assets/scss/_variables.scss'],
+    scss: [
+      '~/assets/scss/_variables.scss',
+      '~/assets/scss/_mixins.scss'
+    ],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
