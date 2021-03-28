@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'Jonas Streule - Bullshit-Bingo',
     htmlAttrs: {
-      lang: 'de'
+      lang: 'de-CH'
     },
     meta: [
       { charset: 'utf-8' },
@@ -23,6 +23,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'normalize.css/normalize.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -52,7 +53,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'de'
+      lang: 'de-CH'
     }
   },
 
