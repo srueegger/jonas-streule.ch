@@ -5,7 +5,8 @@
       <span id="total_points" class="text-bold text-shadow">{{ this.$store.state.total_points }}</span>
     </div>
     <div id="game_field" class="container">
-      Hallo {{ player_name }}<br>Hier ist das Spiel
+      <p class="text-white">Hallo <strong>{{ player_name }}</strong></p>
+      <p class="text-white">Wenn Jonas einer dieser Sätze sagt, klicke den entsprechenden Satz an.</p>
       <ul id="bingo_statements">
         <Bingostatement
           v-for="statement in statements"
@@ -13,6 +14,11 @@
           v-bind:statement="statement"
         />
       </ul>
+    </div>
+    <div id="endscreen" class="d-none">
+      <h2 class="text-white text-center">Glückwunsch {{ player_name }}!</h2>
+      <h3 class="text-white text-center">In dieser Runde hast du <span class="text-underline">{{ this.$store.state.total_points }}</span> Punkte erreicht!</h3>
+      <button type="button" class="btn" @click="go_to_game_landing()">Neues Spiel starten!</button>
     </div>
   </div>
 </template>
@@ -27,12 +33,24 @@ export default {
     }
   },
   asyncData( ctx ) {
-    return API.get( 'bingo_statements/?per_page=100&orderby=rand' )
+    return API.get( 'bingo_statements/?per_page=7&orderby=rand' )
     .then( response => {
       return {
         statements: response.data
       }
     });
+  },
+  methods: {
+    go_to_game_landing() {
+      this.$router.push({
+        path: '/'
+      });
+    }
+  },
+  created() {
+    if( !this.player_name ) {
+      this.go_to_game_landing();
+    }
   },
   head() {
     return {
@@ -58,7 +76,7 @@ export default {
       line-height: 45px;
       font-size: 22px;
       position: absolute;
-      left: 15px;
+      left: 10px;
     }
     #total_points {
       color: #e2b007;
@@ -81,5 +99,16 @@ export default {
         margin-bottom: 15px;
       }
     }
+  }
+
+  #endscreen {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    padding: 15px;
+    background: $red;
+    border: 5px solid $black;
+    width: calc(100% - 30px);
   }
 </style>

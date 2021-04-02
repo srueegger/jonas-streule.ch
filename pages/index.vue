@@ -37,8 +37,6 @@ export default {
     return {
       player_name: '',
       type_writer_txt: 'Hallo!<br>Ich bin der Jonas von der SVP<br>Gib deinen Namen ein um zu zu spielen.',
-      //type_writer_speed: 5000,
-      //type_writer_position: 0
     }
   },
   methods: {
