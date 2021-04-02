@@ -24,9 +24,12 @@ export default {
       }
     },
     async add_points( points ) {
+      /* Animation starten */
+      /* var animation_element = document.getElementById('points_animation');
+      animation_element.innerText('+ ' + points); */
+      /* Gesamtpunktestand anpassen */
       var new_points = Number(this.$store.state.total_points) + Number(points);
       this.$store.commit('SET_TOTAL_POINTS', new_points);
-      console.log(this.$store.state.total_points);
     }
   }
 }

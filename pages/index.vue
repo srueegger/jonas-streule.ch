@@ -43,7 +43,6 @@ export default {
   },
   methods: {
     async start_game() {
-      console.log('Spiel wird gestartet');
       /* Prüfen ob ein Name eingegeben wurde */
       if(this.player_name) {
         /* Name in der VUEX Storage speichern */

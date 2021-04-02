@@ -1,7 +1,7 @@
 <template>
   <div id="page_content">
     <div id="points_container">
-      <span id="points_animation" class="text-bold text-shadow text-white">+ 5</span>
+      <span id="points_animation" class="text-bold text-shadow text-white"></span>
       <span id="total_points" class="text-bold text-shadow">{{ this.$store.state.total_points }}</span>
     </div>
     <div id="game_field" class="container">
