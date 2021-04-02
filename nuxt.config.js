@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jonas Streule',
+    title: 'Jonas Streule - Bullshit Bingo',
     htmlAttrs: {
       lang: 'de-CH'
     },
@@ -17,7 +17,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { hid: 'msapplicationTileColor', name: 'msapplication-TileColor', content: '#ffffff' },
       { hid: 'msapplicationTileImage', name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-      { hid: 'themeColor', name: 'theme-color', content: '#ffffff' }
+      { hid: 'themeColor', name: 'theme-color', content: '#ffffff' },
+      { hid: 'ogTitle', property: 'og:title', content: 'Jonas Streule - Bullshit Bingo' },
+      { hid: 'ogDesc', property: 'og:description', content: '' },
+      { hid: 'ogImage', property: 'og:image', content: '/jonas_social.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
