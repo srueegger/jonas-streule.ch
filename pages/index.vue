@@ -2,7 +2,7 @@
   <div id="page_content">
     <section id="game_intro" class="screen_height">
       <div class="container">
-        <div id="game_title" class="text-bold">
+        <div id="game_title" class="text-bold text-white">
           <h1 class="text-bold text-shadow">Jonas Streule's <span>Bullshit-Bingo</span></h1>
         </div>
         <div id="bubble" class="mb-45">
@@ -20,7 +20,7 @@
         <button v-if="player_name" type="button" class="btn mt-15" @click="start_game()" id="start_game">Spiel als {{ player_name }} starten</button>
       </div>
       <div v-scroll-to="'#how_it_works'" class="bottom_layer" role="button">
-        <p class="text-bold text-shadow">So funktioniert's</p>
+        <p class="text-bold text-shadow text-white">So funktioniert's</p>
       </div>
     </section>
     <section id="how_it_works" class="screen_height">
@@ -60,7 +60,6 @@ export default {
 
 <style lang="scss">
   #game_title {
-    color: $white;
     text-align: center;
     transform: rotate(7deg);
     margin-bottom: 25px;
@@ -79,7 +78,6 @@ export default {
     bottom: 0;
     p {
       text-align: center;
-      color: $white;
       font-size: 22px;
       margin: 0;
       line-height: 50px;

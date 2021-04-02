@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Jonas Streule - Bullshit-Bingo',
+    title: 'Jonas Streule',
     htmlAttrs: {
       lang: 'de-CH'
     },
