@@ -2,7 +2,7 @@
   <div id="page_content">
     <div id="points_container">
       <span id="points_animation" class="text-bold text-shadow text-white">+ 5</span>
-      <span id="total_points" class="text-bold text-shadow">{{ total_points }}</span>
+      <span id="total_points" class="text-bold text-shadow">{{ this.$store.state.total_points }}</span>
     </div>
     <div id="game_field" class="container">
       Hallo {{ player_name }}<br>Hier ist das Spiel
@@ -11,7 +11,6 @@
           v-for="statement in statements"
           v-bind:key="statement.id"
           v-bind:statement="statement"
-          v-bind:total_points="total_points"
         />
       </ul>
     </div>
@@ -24,12 +23,11 @@ export default {
   data() {
     return {
       player_name: this.$store.state.player_name,
-      total_points: 0,
       statements: {}
     }
   },
   asyncData( ctx ) {
-    return API.get( 'bingo_statements/?per_page=100' )
+    return API.get( 'bingo_statements/?per_page=100&orderby=rand' )
     .then( response => {
       return {
         statements: response.data
@@ -72,5 +70,16 @@ export default {
 
   #game_field {
     margin-top: 55px;
+  }
+
+  #bingo_statements {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
   }
 </style>
