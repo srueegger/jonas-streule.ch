@@ -32,7 +32,7 @@ export default {
       statements: {}
     }
   },
-  asyncData( ctx ) {
+  asyncData() {
     return API.get( 'bingo_statements/?per_page=7&orderby=rand' )
     .then( response => {
       return {
@@ -79,7 +79,7 @@ export default {
       left: 10px;
     }
     #total_points {
-      color: #e2b007;
+      color: $gold;
       font-size: 28px;
       left: unset;
       right: 15px;

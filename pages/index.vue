@@ -6,7 +6,9 @@
           <h1 class="text-bold text-shadow">Jonas Streule's <span>Bullshit-Bingo</span></h1>
         </div>
         <div id="bubble" class="mb-45">
-          <div id="speech_txt" v-html="type_writer_txt" class="speech"></div>
+          <div id="speech_txt" class="speech">
+            Hallo!<br>Ich bin der Jonas von der SVP<br>Gib deinen Namen ein um zu zu spielen.
+          </div>
           <div class="image">
             <picture>
               <img src="~/assets/images/jonas.jpg" alt="Jonas Streule" loading="lazy">
@@ -18,6 +20,7 @@
           <span v-if="!player_name" id="field_error" class="text-bold">Du musst einen Namen eingeben</span>
         </div>
         <button v-if="player_name" type="button" class="btn mt-15" @click="start_game()" id="start_game">Spiel als {{ player_name }} starten</button>
+        <NuxtLink class="btn mt-45" to="/highscore">Highcore anzeigen</NuxtLink>
       </div>
       <div v-scroll-to="'#how_it_works'" class="bottom_layer" role="button">
         <p class="text-bold text-shadow text-white">So funktioniert's</p>
@@ -35,8 +38,7 @@
 export default {
   data() {
     return {
-      player_name: '',
-      type_writer_txt: 'Hallo!<br>Ich bin der Jonas von der SVP<br>Gib deinen Namen ein um zu zu spielen.',
+      player_name: ''
     }
   },
   methods: {
