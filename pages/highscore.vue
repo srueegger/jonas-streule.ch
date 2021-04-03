@@ -28,7 +28,7 @@ export default {
     }
   },
   asyncData() {
-    return API.get( 'bingo_highscore/?per_page=100' )
+    return API.get( 'wp/v2/bingo_highscore/?per_page=100' )
     .then( response => {
       return {
         highscore_list: response.data

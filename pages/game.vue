@@ -33,7 +33,7 @@ export default {
     }
   },
   asyncData() {
-    return API.get( 'bingo_statements/?per_page=7&orderby=rand' )
+    return API.get( 'wp/v2/bingo_statements/?per_page=7&orderby=rand' )
     .then( response => {
       return {
         statements: response.data
