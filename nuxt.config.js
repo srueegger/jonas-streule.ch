@@ -65,8 +65,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
     'vue-scrollto/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots'
@@ -93,13 +91,6 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'de-CH'
-    }
-  },
 
   sitemap: {
     hostname: 'https://jonas-streule.ch',
