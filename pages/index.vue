@@ -45,6 +45,11 @@ export default {
     async start_game() {
       /* Prüfen ob ein Name eingegeben wurde */
       if(this.player_name) {
+        /* Prüfen ob der Name erlaubt ist */
+        if(this.player_name.toLowerCase() == 'jonas') {
+          alert('Der Name ' + this.player_name + ' ist nicht erlaubt! ;)');
+          return;
+        }
         /* Name in der VUEX Storage speichern */
         this.$store.commit('SET_PLAYER_NAME', this.player_name);
         /* Zum Game weiterleiten */
