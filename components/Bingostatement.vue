@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import API from '../api';
 export default {
   props: {
     statement: Object
@@ -15,7 +16,6 @@ export default {
       var new_points = card_element.dataset.points;
       /* Prüfen ob die CardID bereits angeklickt wurde wurde */
       if(!card_element.classList.contains('clicked')) {
-        this.check_endscreen();
         card_element.classList.add('clicked');
         /* Nach der CSS Animation das Element verschwinden lassen */
         setTimeout(function() {
@@ -34,16 +34,23 @@ export default {
       /* Gesamtpunktestand anpassen */
       var new_points = Number(this.$store.state.total_points) + Number(points);
       this.$store.commit('SET_TOTAL_POINTS', new_points);
+      this.check_endscreen();
     },
     async check_endscreen() {
       var new_counter = Number(this.$store.state.total_played_cards) + 1;
       this.$store.commit('SET_PLAYED_CARD', new_counter);
       if(this.$store.state.total_played_cards >= 7) {
-        /* Spielende wurde erreicht -> Endscreen anzeigen */
+        /* Spielende wurde erreicht */
+        /* Endscreen anzeigen */
         setTimeout(function() {
           var endscreen_element = document.getElementById('endscreen');
           endscreen_element.classList.remove('d-none');
         }, 600);
+        /* Highscore speichern */
+        var rest_send_datas = new URLSearchParams();
+        rest_send_datas.append('points', this.$store.state.total_points);
+        rest_send_datas.append('player_name', this.$store.state.player_name);
+        return API.get('js/v1/savehighscore/?' + rest_send_datas.toString());
       }
     }
   }
