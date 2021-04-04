@@ -29,7 +29,30 @@
     </section>
     <section id="how_it_works" class="screen_height">
       <div class="container">
-        Hier folgt eine kleine Anleitung wie das Spiel funktioniert.
+        <div class="tutorial_step">
+          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 1</h3></div>
+          <div class="tutorial_step--text">
+            <p>Gehe in einen <a href="https://apps.apple.com/ch/app/clubhouse-drop-in-audio-chat/id1503133294" target="_blank">Clubhouse</a> Raum indem Jonas Streule anwesend ist.</p>
+          </div>
+        </div>
+        <div class="tutorial_step">
+          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 2</h3></div>
+          <div class="tutorial_step--text">
+            <p>Teile diese Webseite mit allen anderen Sprecher und Zuhörer im Raum</p>
+          </div>
+        </div>
+        <div class="tutorial_step">
+          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 3</h3></div>
+          <div class="tutorial_step--text">
+            <p>Starte das <strong>Jonas Streule - Bullshit Bingo</strong> - viel Glück!</p>
+          </div>
+        </div>
+        <div class="tutorial_step">
+          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 4</h3></div>
+          <div class="tutorial_step--text">
+            <p>Versuche regelmässig dein Glück und kämpfe dich an die Spitze der <NuxtLink to="/highscore">Highscore - Liste</NuxtLink>!</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -103,5 +126,20 @@ export default {
 
   #how_it_works {
     background: $white;
+  }
+
+  .tutorial_step {
+    &--title {
+      height: 30px;
+      background: $black;
+      h3 {
+        line-height: 30px;
+      }
+    }
+    &--text {
+      border: 1px solid $gold;
+      border-top: none;
+      padding: 10px;
+    }
   }
 </style>
