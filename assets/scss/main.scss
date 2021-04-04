@@ -105,6 +105,7 @@ section {
     margin-bottom: 15px;
     border: 1px solid $black;
     padding: 15px;
+    font-size: 14px;
     &:after {
       content: '';
       position: absolute;
@@ -123,8 +124,8 @@ section {
   .image {
     text-align: right;
     img {
-      width: 125px;
-      height: 125px;
+      width: 90px;
+      height: 90px;
       border: 2px solid $white;
       border-radius: 100%;
       margin-right: 20px;
