@@ -32,25 +32,25 @@
         <div class="tutorial_step">
           <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 1</h3></div>
           <div class="tutorial_step--text">
-            <p>Gehe in einen <a href="https://apps.apple.com/ch/app/clubhouse-drop-in-audio-chat/id1503133294" target="_blank">Clubhouse</a> Raum indem Jonas Streule anwesend ist.</p>
+            <p>Gehe in einen <a href="https://apps.apple.com/ch/app/clubhouse-drop-in-audio-chat/id1503133294" target="_blank">Clubhouse</a> Raum in dem Jonas Streule anwesend ist.</p>
           </div>
         </div>
         <div class="tutorial_step">
           <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 2</h3></div>
           <div class="tutorial_step--text">
-            <p>Teile diese Webseite mit allen anderen Sprecher und Zuhörer im Raum</p>
+            <p>Teile diese Webseite mit allen anderen Mitgliedern im Raum</p>
           </div>
         </div>
         <div class="tutorial_step">
           <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 3</h3></div>
           <div class="tutorial_step--text">
-            <p>Starte das <strong>Jonas Streule - Bullshit Bingo</strong> - viel Glück!</p>
+            <p>Gehe auf die <a href="https://www.facebook.com/jonaslawandorder" target="_blank">Facebook-Seite</a> und gebe ihr ein Like.</p>
           </div>
         </div>
         <div class="tutorial_step">
           <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 4</h3></div>
           <div class="tutorial_step--text">
-            <p>Versuche regelmässig dein Glück und kämpfe dich an die Spitze der <NuxtLink to="/highscore">Highscore - Liste</NuxtLink>!</p>
+            <p>Schau regelmässig hier vorbei und kämpfe dich <strong>patriotisch</strong> an die Spitze des Highscores!</p>
           </div>
         </div>
       </div>
