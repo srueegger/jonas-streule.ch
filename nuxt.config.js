@@ -14,13 +14,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Das ultimative Jonas Streule - Bullshit Bingo von und mit Jonas Streule!' },
       { hid: 'author', name: 'author', content: 'Samuel Rüegger' },
       { hid: 'msapplicationTileColor', name: 'msapplication-TileColor', content: '#ffffff' },
       { hid: 'msapplicationTileImage', name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
       { hid: 'themeColor', name: 'theme-color', content: '#ffffff' },
       { hid: 'ogTitle', property: 'og:title', content: 'Jonas Streule - Bullshit Bingo' },
-      { hid: 'ogDesc', property: 'og:description', content: '' },
+      { hid: 'ogDesc', property: 'og:description', content: 'Das ultimative Jonas Streule - Bullshit Bingo von und mit Jonas Streule!' },
       { hid: 'ogImage', property: 'og:image', content: '/jonas_social.jpg' },
       { hid: 'twitterCreater', name: 'twitter:creator', content: '@srueegger' }
     ],
