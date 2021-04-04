@@ -93,7 +93,8 @@ export default {
   fontawesome: {
     proIcons: {
       solid: [
-        'faSun'
+        'faSun',
+        'faShare'
       ],
       light: [
         'faStar',

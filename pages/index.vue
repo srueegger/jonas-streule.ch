@@ -9,6 +9,7 @@
           <div id="speech_txt" class="speech">
             Hoi zämme,<br>ich bin der Jonas aus St. Gallen.<br>I`m the future Bundesrat of the bescht Partei wo`s je hets gits: <strong>SVP</strong> <font-awesome-icon :icon="['fas', 'sun']" class="fa-2x text-yellow" />
           </div>
+          <Share />
           <div class="image">
             <picture>
               <img src="~/assets/images/jonas.jpg" alt="Jonas Streule" loading="lazy">
