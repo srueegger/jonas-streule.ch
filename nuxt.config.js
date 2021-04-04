@@ -96,7 +96,9 @@ export default {
     proIcons: {
       solid: [
         'faSun',
-        'faShare'
+        'faShare',
+        'faLightbulbExclamation',
+        'faQuestionCircle'
       ],
       light: [
         'faStar',

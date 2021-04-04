@@ -24,31 +24,31 @@
         <NuxtLink class="btn mt-30" to="/highscore"><font-awesome-icon :icon="['fal', 'star']" class="mr-10 text-gold" />Highcore anzeigen</NuxtLink>
       </div>
       <div v-scroll-to="'#how_it_works'" class="bottom_layer" role="button">
-        <p class="text-bold text-shadow text-white">So funktioniert's</p>
+        <p class="text-bold text-shadow text-white">So funktioniert's <font-awesome-icon :icon="['fas', 'question-circle']" class="text-gold" /></p>
       </div>
     </section>
     <section id="how_it_works" class="screen_height">
       <div class="container">
         <div class="tutorial_step">
-          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 1</h3></div>
+          <div class="tutorial_step--title"><h3 class="text-white text-center"><font-awesome-icon :icon="['fas', 'lightbulb-exclamation']" class="mr-10 text-gold" />Schritt 1</h3></div>
           <div class="tutorial_step--text">
             <p>Gehe in einen <a href="https://apps.apple.com/ch/app/clubhouse-drop-in-audio-chat/id1503133294" target="_blank">Clubhouse</a> Raum in dem Jonas Streule anwesend ist.</p>
           </div>
         </div>
         <div class="tutorial_step">
-          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 2</h3></div>
+          <div class="tutorial_step--title"><h3 class="text-white text-center"><font-awesome-icon :icon="['fas', 'lightbulb-exclamation']" class="mr-10 text-gold" />Schritt 2</h3></div>
           <div class="tutorial_step--text">
             <p>Teile diese Webseite mit allen anderen Mitgliedern im Raum</p>
           </div>
         </div>
         <div class="tutorial_step">
-          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 3</h3></div>
+          <div class="tutorial_step--title"><h3 class="text-white text-center"><font-awesome-icon :icon="['fas', 'lightbulb-exclamation']" class="mr-10 text-gold" />Schritt 3</h3></div>
           <div class="tutorial_step--text">
             <p>Gehe auf die <a href="https://www.facebook.com/jonaslawandorder" target="_blank">Facebook-Seite</a> und gebe ihr ein Like.</p>
           </div>
         </div>
         <div class="tutorial_step">
-          <div class="tutorial_step--title"><h3 class="text-white text-center">Schritt 4</h3></div>
+          <div class="tutorial_step--title"><h3 class="text-white text-center"><font-awesome-icon :icon="['fas', 'lightbulb-exclamation']" class="mr-10 text-gold" />Schritt 4</h3></div>
           <div class="tutorial_step--text">
             <p>Schau regelmässig hier vorbei und kämpfe dich <strong>patriotisch</strong> an die Spitze des Highscores!</p>
           </div>
