@@ -20,7 +20,7 @@
           <span v-if="!player_name" id="field_error" class="text-bold">Du musst einen Namen eingeben</span>
         </div>
         <button v-if="player_name" type="button" class="btn mt-15" @click="start_game()" id="start_game"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />Spiel als {{ player_name }} starten</button>
-        <NuxtLink class="btn mt-45" to="/highscore"><font-awesome-icon :icon="['fal', 'star']" class="mr-10 text-gold" />Highcore anzeigen</NuxtLink>
+        <NuxtLink class="btn mt-30" to="/highscore"><font-awesome-icon :icon="['fal', 'star']" class="mr-10 text-gold" />Highcore anzeigen</NuxtLink>
       </div>
       <div v-scroll-to="'#how_it_works'" class="bottom_layer" role="button">
         <p class="text-bold text-shadow text-white">So funktioniert's</p>
