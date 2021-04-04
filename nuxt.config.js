@@ -58,7 +58,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/google-fonts',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -87,6 +88,18 @@ export default {
       '~/assets/scss/_variables.scss',
       '~/assets/scss/_mixins.scss'
     ],
+  },
+
+  fontawesome: {
+    proIcons: {
+      solid: [
+        'faSun'
+      ],
+      light: [
+        'faStar',
+        'faPlay'
+      ]
+    }
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

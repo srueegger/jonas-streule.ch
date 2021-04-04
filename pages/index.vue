@@ -7,7 +7,7 @@
         </div>
         <div id="bubble" class="mb-45">
           <div id="speech_txt" class="speech">
-            Hallo!<br>Ich bin der Jonas von der SVP<br>Gib deinen Namen ein um zu zu spielen.
+            Hoi zämme,<br>ich bin der Jonas aus St. Gallen.<br>I`m the future Bundesrat of the bescht Partei wo`s je hets gits: <strong>SVP</strong> <font-awesome-icon :icon="['fas', 'sun']" class="fa-2x text-yellow" />
           </div>
           <div class="image">
             <picture>
@@ -19,8 +19,8 @@
           <input type="text" placeholder="Dein Name" name="player_name" id="player_name" class="text-bold" v-model="player_name">
           <span v-if="!player_name" id="field_error" class="text-bold">Du musst einen Namen eingeben</span>
         </div>
-        <button v-if="player_name" type="button" class="btn mt-15" @click="start_game()" id="start_game">Spiel als {{ player_name }} starten</button>
-        <NuxtLink class="btn mt-45" to="/highscore">Highcore anzeigen</NuxtLink>
+        <button v-if="player_name" type="button" class="btn mt-15" @click="start_game()" id="start_game"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />Spiel als {{ player_name }} starten</button>
+        <NuxtLink class="btn mt-45" to="/highscore"><font-awesome-icon :icon="['fal', 'star']" class="mr-10 text-gold" />Highcore anzeigen</NuxtLink>
       </div>
       <div v-scroll-to="'#how_it_works'" class="bottom_layer" role="button">
         <p class="text-bold text-shadow text-white">So funktioniert's</p>

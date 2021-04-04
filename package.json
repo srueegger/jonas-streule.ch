@@ -19,6 +19,9 @@
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
+    "@fortawesome/pro-light-svg-icons": "^5.15.3",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.3",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/google-fonts": "^1.3.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "eslint-config-prettier": "^8.1.0",

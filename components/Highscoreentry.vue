@@ -1,6 +1,6 @@
 <template>
   <div class="highscore_entry">
-    <span class="highscore_entry--rang text-bold text-shadow">{{ rang }}.</span>
+    <span class="highscore_entry--rang text-bold text-shadow text-gold">{{ rang }}.</span>
     <span class="highscore_entry--name">{{ highscore.title.rendered }}</span>
     <span class="highscore_entry--points text-bold text-shadow">{{ highscore.ACF.highscore_punkte }}</span>
   </div>
@@ -17,7 +17,6 @@
     padding-left: 15px;
     padding-right: 15px;
     &--rang {
-      color: $gold;
       font-size: 24px;
       margin-right: 15px;
     }

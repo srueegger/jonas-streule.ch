@@ -4,7 +4,7 @@
       <div id="game_title" class="text-bold text-white">
         <h1 class="text-bold text-shadow">Bullshit-Bingo <span>Highscore</span></h1>
       </div>
-      <NuxtLink class="btn mt-15" to="/">{{ return_game }}</NuxtLink>
+      <NuxtLink class="btn mt-15" to="/"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
       <section id="highscore" class="mt-45">
         <Highscoreentry
           v-for="(highscore, index) in highscore_list"
@@ -13,7 +13,7 @@
           v-bind:rang="index+1"
         />
       </section>
-      <NuxtLink class="btn mt-15" to="/">{{ return_game }}</NuxtLink>
+      <NuxtLink class="btn mt-15" to="/"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
     </div>
   </div>
 </template>
