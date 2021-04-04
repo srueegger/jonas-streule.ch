@@ -22,7 +22,7 @@ export default {
       show_share: false,
       share_data: {
         title: 'Jonas Streule - Bullshit Bingo',
-        text: 'Spiel mit mir das ultimative Jonas Streule - Bullshit Bingo',
+        text: 'Spiel mit mir das ultimative (!) Jonas Streule - Bullshit Bingo!',
         url: 'https://jonas-streule.ch'
       }
     }
