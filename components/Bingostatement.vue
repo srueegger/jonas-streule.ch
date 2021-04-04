@@ -39,6 +39,9 @@ export default {
     async check_endscreen() {
       var new_counter = Number(this.$store.state.total_played_cards) + 1;
       this.$store.commit('SET_PLAYED_CARD', new_counter);
+      if(this.$store.state.total_played_cards == 8) {
+        this.$store.commit('SET_PLAYED_CARD', 1);
+      }
       if(this.$store.state.total_played_cards >= 7) {
         /* Spielende wurde erreicht */
         /* Endscreen anzeigen */
