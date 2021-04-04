@@ -37,7 +37,10 @@ export default {
   },
   head() {
     return {
-      title: 'Bullshit Bingo Highscore - Jonas Streule'
+      title: 'Bullshit Bingo Highscore - Jonas Streule',
+      meta: [
+        { hid: 'ogTitle', property: 'og:title', content: 'Bullshit Bingo Highscore - Jonas Streule' },
+      ]
     }
   }
 }

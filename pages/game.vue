@@ -52,11 +52,6 @@ export default {
     if( !this.player_name ) {
       this.go_to_game_landing();
     }
-  },
-  head() {
-    return {
-      title: 'Bullshit Bingo - Jonas Streule'
-    }
   }
 }
 </script>
