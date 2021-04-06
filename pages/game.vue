@@ -52,6 +52,9 @@ export default {
     if( !this.player_name ) {
       this.go_to_game_landing();
     }
+  },
+  mounted() {
+    this.$store.commit('SET_TOTAL_POINTS', 0);
   }
 }
 </script>
