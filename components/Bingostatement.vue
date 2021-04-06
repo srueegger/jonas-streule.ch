@@ -41,6 +41,7 @@ export default {
       this.$store.commit('SET_PLAYED_CARD', new_counter);
       if(this.$store.state.total_played_cards == 8) {
         this.$store.commit('SET_PLAYED_CARD', 1);
+        this.$store.commit('SET_TOTAL_POINTS', 0);
       }
       if(this.$store.state.total_played_cards >= 7) {
         /* Spielende wurde erreicht */
