@@ -4,7 +4,7 @@
       <div id="game_title" class="text-bold text-white">
         <h1 class="text-bold text-shadow">Bullshit-Bingo <span>Highscore</span></h1>
       </div>
-      <NuxtLink class="btn mt-15" to="/"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
+      <NuxtLink class="btn mt-15" to="/bingo"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
       <section v-if="highscore_list.length > 0" id="highscore" class="mt-45">
         <Highscoreentry
           v-for="(highscore, index) in highscore_list"
@@ -16,14 +16,15 @@
       <section v-if="highscore_list.length == 0">
         <p class="text-white text-center mt-15">Bisher gibt es noch keine Einträge!</p>
       </section>
-      <NuxtLink class="btn mt-15" to="/"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
+      <NuxtLink class="btn mt-15" to="/bingo"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />{{ return_game }}</NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
-import API from '../api';
+import API from '../../api';
 export default {
+  layout: 'bingo',
   data() {
     return {
       highscore_list: {},

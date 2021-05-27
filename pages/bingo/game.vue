@@ -18,15 +18,16 @@
     <div id="endscreen" class="d-none">
       <h2 class="text-white text-center">Bingo! {{ player_name }}!</h2>
       <h3 class="text-white text-center">Herzlichen Glückwunsch {{ player_name }}!<br>In dieser Runde hast du <span class="text-underline">{{ this.$store.state.total_points }}</span> Punkte erreicht!</h3>
-      <h4 class="text-white text-center">Deine Leistung wurde im <NuxtLink to="/highscore">Highscore</NuxtLink> gespeichert.</h4>
+      <h4 class="text-white text-center">Deine Leistung wurde im <NuxtLink to="/bingo/highscore">Highscore</NuxtLink> gespeichert.</h4>
       <button type="button" class="btn" @click="go_to_game_landing()"><font-awesome-icon :icon="['fal', 'play']" class="mr-10 text-gold" />Neues Spiel starten!</button>
     </div>
   </div>
 </template>
 
 <script>
-import API from '../api';
+import API from '../../api';
 export default {
+  layout: 'bingo',
   data() {
     return {
       player_name: this.$store.state.player_name,
@@ -44,7 +45,7 @@ export default {
   methods: {
     go_to_game_landing() {
       this.$router.push({
-        path: '/'
+        path: '/bingo'
       });
     }
   },

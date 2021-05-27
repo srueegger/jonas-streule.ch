@@ -1,30 +1,5 @@
 <template>
-  <div id="mobile_wrapper">
+  <div id="page_wrapper">
     <Nuxt />
   </div>
 </template>
-
-<style lang="scss">
-  @include for-tablet-landscape-up {
-    #mobile_wrapper {
-      width: 414px;
-      height: 736px;
-      border: 2px solid $white;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      position: absolute;
-      right: 50%;
-      bottom: 50%;
-      transform: translate(50%, 50%);
-    }
-  }
-</style>
-
-<script>
-export default {
-  mounted() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-}
-</script>
